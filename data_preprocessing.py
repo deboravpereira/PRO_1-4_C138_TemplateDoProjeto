@@ -89,12 +89,9 @@ def bag_of_words_encoding(stem_words, pattern_word_tags_list):
         # Stemizando palavras padrão antes de criar o saco de palavras
         stemmed_pattern_word = get_stem_words(pattern_words, ignore_words)
 
-        # Codificando dados de entrada 
-        for word in stem_words:            
-            if word in stemmed_pattern_word:              
-                bag_of_words.append(1)
-            else:
-                bag_of_words.append(0)
+        # Codificando dados de entrada
+        #Coloque aqui o código para adicionar as palavras setmizadas no saco de palavras
+       
 
         bag.append(bag_of_words)
     
